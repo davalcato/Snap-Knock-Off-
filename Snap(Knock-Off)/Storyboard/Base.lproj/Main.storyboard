@@ -124,6 +124,77 @@
             </objects>
             <point key="canvasLocation" x="896.79999999999995" y="694.90254872563719"/>
         </scene>
+        <!--Left View-->
+        <scene sceneID="0Tk-SQ-5M6">
+            <objects>
+                <viewController storyboardIdentifier="left" useStoryboardIdentifierAsRestorationIdentifier="YES" id="TnN-Ym-7AH" customClass="LeftView" customModule="Snap_Knock_Off_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y0N-Qh-NE3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="crU-oc-PEK"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gh1-XS-OFw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1721" y="695"/>
+        </scene>
+        <!--Middle View-->
+        <scene sceneID="QUn-of-qJr">
+            <objects>
+                <viewController storyboardIdentifier="middle" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CRu-m1-ALA" customClass="MiddleView" customModule="Snap_Knock_Off_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fTc-7F-w2Q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="paB-0k-Xwy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UAV-4P-nNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2546" y="695"/>
+        </scene>
+        <!--Container View-->
+        <scene sceneID="Ja5-Sm-tUx">
+            <objects>
+                <viewController id="HRc-bw-tL6" customClass="ContainerView" customModule="Snap_Knock_Off_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="AEZ-gS-pCy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BWo-xI-AXk">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BWo-xI-AXk" firstAttribute="bottom" secondItem="Spy-lx-fez" secondAttribute="bottom" id="0yd-BC-yk0"/>
+                            <constraint firstItem="BWo-xI-AXk" firstAttribute="leading" secondItem="AEZ-gS-pCy" secondAttribute="leading" id="MGx-ea-uEj"/>
+                            <constraint firstAttribute="trailing" secondItem="BWo-xI-AXk" secondAttribute="trailing" id="dY7-gE-n5f"/>
+                            <constraint firstItem="BWo-xI-AXk" firstAttribute="top" secondItem="AEZ-gS-pCy" secondAttribute="top" id="eqy-rG-37R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Spy-lx-fez"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ajr-ld-RL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2544.8000000000002" y="1451.4242878560722"/>
+        </scene>
+        <!--Right View-->
+        <scene sceneID="8wr-13-zlE">
+            <objects>
+                <viewController storyboardIdentifier="right" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kiW-OT-cDM" customClass="RightView" customModule="Snap_Knock_Off_" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BUh-vI-waP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="xAv-8t-vh2"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7XP-Fg-9Lb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3398" y="695"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="TGy-Pd-CwU">
             <objects>
@@ -203,6 +274,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="HRc-bw-tL6" kind="show" id="eWG-ED-bn4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -218,6 +292,6 @@
         <image name="logo" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WMP-sI-IUg"/>
+        <segue reference="eu2-Cm-EUl"/>
     </inferredMetricsTieBreakers>
 </document>
