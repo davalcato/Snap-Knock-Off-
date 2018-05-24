@@ -15,7 +15,8 @@ class ContainerView: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let left = self.storyboard?.instantiateViewController(withIdentifier: "left") as! LeftView
+        let left = self.storyboard?.instantiateViewController(withIdentifier: "leftViewNav") as! UINavigationController
+        
         self.addChildViewController(left)
         self.scroll.addSubview(left.view)
         self.didMove(toParentViewController: self)
