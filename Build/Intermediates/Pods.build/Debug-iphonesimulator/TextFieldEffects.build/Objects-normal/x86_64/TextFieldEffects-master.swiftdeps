@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1.1 (swiftlang-902.0.53 clang-902.0.39.2)"
 options: "8fcca9b08bc64236304d3322c9e28970"
-build_time: [1527046496, 583399000]
+build_time: [1527177842, 369133000]
 inputs:
   "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1526958520, 0]
   "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1526958520, 0]

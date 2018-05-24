@@ -196,13 +196,14 @@ SWIFT_CLASS("_TtC15Snap_Knock_Off_11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIScrollView;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15Snap_Knock_Off_13ContainerView")
 @interface ContainerView : UIViewController
+@property (nonatomic, strong) IBOutlet UIScrollView * _Null_unspecified scroll;
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -229,7 +230,6 @@ SWIFT_CLASS("_TtC15Snap_Knock_Off_10MiddleView")
 SWIFT_CLASS("_TtC15Snap_Knock_Off_9RightView")
 @interface RightView : UIViewController
 - (void)viewDidLoad;
-- (void)didReceiveMemoryWarning;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end

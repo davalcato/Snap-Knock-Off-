@@ -404,7 +404,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QFQW29JWKY;
-				INFOPLIST_FILE = "Snap(Knock-Off)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Snap(Knock-Off)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,7 +423,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QFQW29JWKY;
-				INFOPLIST_FILE = "Snap(Knock-Off)/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Snap(Knock-Off)/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
