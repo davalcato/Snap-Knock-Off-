@@ -16,7 +16,7 @@ class LeftView: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell") as! UITableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "messageCell") as! MessageCellView essageCellView
         
         cell.textLabel?.text = "Hello World"
         

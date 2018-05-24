@@ -16,6 +16,7 @@
 		755544CB20B518DF00F34744 /* LeftView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755544CA20B518DF00F34744 /* LeftView.swift */; };
 		755544CD20B518F900F34744 /* MiddleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755544CC20B518F900F34744 /* MiddleView.swift */; };
 		755544CF20B5190E00F34744 /* RightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755544CE20B5190E00F34744 /* RightView.swift */; };
+		755E19DE20B73F0E009CA1C9 /* MessageCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755E19DD20B73F0E009CA1C9 /* MessageCellView.swift */; };
 		B7396EA62B6D769F252D666B /* Pods_Snap_Knock_Off_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0463D8F6DCA479D718489625 /* Pods_Snap_Knock_Off_.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		755544CA20B518DF00F34744 /* LeftView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftView.swift; sourceTree = "<group>"; };
 		755544CC20B518F900F34744 /* MiddleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddleView.swift; sourceTree = "<group>"; };
 		755544CE20B5190E00F34744 /* RightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightView.swift; sourceTree = "<group>"; };
+		755E19DD20B73F0E009CA1C9 /* MessageCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCellView.swift; sourceTree = "<group>"; };
 		E84A8772758F03EBE1676A4E /* Pods-Snap(Knock-Off).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snap(Knock-Off).debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snap(Knock-Off)/Pods-Snap(Knock-Off).debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +104,7 @@
 				755544CA20B518DF00F34744 /* LeftView.swift */,
 				755544CC20B518F900F34744 /* MiddleView.swift */,
 				755544CE20B5190E00F34744 /* RightView.swift */,
+				755E19DD20B73F0E009CA1C9 /* MessageCellView.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			files = (
 				755544C720B5188E00F34744 /* ContainerView.swift in Sources */,
 				755544CD20B518F900F34744 /* MiddleView.swift in Sources */,
+				755E19DE20B73F0E009CA1C9 /* MessageCellView.swift in Sources */,
 				755544CF20B5190E00F34744 /* RightView.swift in Sources */,
 				752300D120B39B5B00798457 /* AppDelegate.swift in Sources */,
 				755544CB20B518DF00F34744 /* LeftView.swift in Sources */,
