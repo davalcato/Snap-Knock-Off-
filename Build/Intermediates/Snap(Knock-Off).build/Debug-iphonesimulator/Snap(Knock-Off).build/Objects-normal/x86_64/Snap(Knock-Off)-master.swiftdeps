@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1.1 (swiftlang-902.0.53 clang-902.0.39.2)"
 options: "1caebf88789dcf1bb88e6779f1f6707e"
-build_time: [1527177847, 665713000]
+build_time: [1527182762, 482297000]
 inputs:
   "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/ContainerView.swift": [1527177829, 0]
   "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/MiddleView.swift": [1527046520, 0]

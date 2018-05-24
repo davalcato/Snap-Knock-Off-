@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphonesimulator/Pods_Snap_Knock_Off_.framework/Headers",
+      'name': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphoneos/Pods_Snap_Knock_Off_.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -14,29 +14,29 @@
         {
           'type': 'file',
           'name': "Pods_Snap_Knock_Off_-Swift.h",
-          'external-contents': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphonesimulator/Pods_Snap_Knock_Off_.framework/Headers/Pods_Snap_Knock_Off_-Swift.h"
+          'external-contents': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphoneos/Pods_Snap_Knock_Off_.framework/Headers/Pods_Snap_Knock_Off_-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphonesimulator/Pods_Snap_Knock_Off_.framework/Modules",
+      'name': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphoneos/Pods_Snap_Knock_Off_.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-Snap(Knock-Off).build/module.modulemap"
+          'external-contents': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-Snap(Knock-Off).build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Headers",
+      'name': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "TextFieldEffects-Swift.h",
-          'external-contents': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Headers/TextFieldEffects-Swift.h"
+          'external-contents': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework/Headers/TextFieldEffects-Swift.h"
         },
         {
           'type': 'file',
@@ -47,12 +47,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphonesimulator/TextFieldEffects/TextFieldEffects.framework/Modules",
+      'name': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Products/Debug-iphoneos/TextFieldEffects/TextFieldEffects.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Intermediates/Pods.build/Debug-iphonesimulator/TextFieldEffects.build/module.modulemap"
+          'external-contents': "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Intermediates/Pods.build/Debug-iphoneos/TextFieldEffects.build/module.modulemap"
         }
       ]
     }
