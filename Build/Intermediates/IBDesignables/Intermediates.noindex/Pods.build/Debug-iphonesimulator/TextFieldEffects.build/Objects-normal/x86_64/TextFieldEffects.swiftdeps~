@@ -14,6 +14,8 @@ provides-dynamic-lookup:
 - "drawPlaceholder"
 - "prepareForInterfaceBuilder"
 - "text"
+- "textFieldDidBeginEditing"
+- "textFieldDidEndEditing"
 - "willMove"
 depends-top-level:
 - !private "!"
@@ -836,4 +838,4 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "7edff085195a68212f111479298a7736"
+interface-hash: "49ef1586e3ecde8a00426dee534e0abd"
