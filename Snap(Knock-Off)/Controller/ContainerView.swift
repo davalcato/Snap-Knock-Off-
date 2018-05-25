@@ -30,7 +30,8 @@ class ContainerView: UIViewController {
         middleFrame.origin.x = self.view.frame.width
         middle.view.frame = middleFrame
         
-        let right = self.storyboard?.instantiateViewController(withIdentifier: "right") as! RightView
+        let right = self.storyboard?.instantiateViewController(withIdentifier: "rightViewNav") as! UINavigationController
+        
         self.addChildViewController(right)
         self.scroll.addSubview(right.view)
         self.didMove(toParentViewController: self)
