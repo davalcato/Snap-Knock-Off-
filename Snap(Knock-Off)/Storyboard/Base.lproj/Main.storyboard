@@ -90,7 +90,7 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="WMP-sI-IUg"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="LHD-2a-1jI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uE1-A2-9lE">
@@ -104,6 +104,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="bNh-dx-oQO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's your name?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0q-hr-bOZ">
                                 <rect key="frame" x="80" y="139" width="215" height="29"/>
@@ -200,7 +203,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ZT-96-2XO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="956" y="914"/>
+            <point key="canvasLocation" x="890" y="924"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="xqM-lr-ZbZ">
@@ -257,10 +260,10 @@
             </objects>
             <point key="canvasLocation" x="3144.8000000000002" y="283.80809595202402"/>
         </scene>
-        <!--Middle View-->
+        <!--Camera View Controller-->
         <scene sceneID="QUn-of-qJr">
             <objects>
-                <viewController storyboardIdentifier="middle" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CRu-m1-ALA" customClass="MiddleView" customModule="Snap_Knock_Off_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CameraView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CRu-m1-ALA" customClass="CameraViewController" customModule="Snap_Knock_Off_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fTc-7F-w2Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -616,6 +619,6 @@
         <image name="logo" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WMP-sI-IUg"/>
+        <segue reference="eu2-Cm-EUl"/>
     </inferredMetricsTieBreakers>
 </document>

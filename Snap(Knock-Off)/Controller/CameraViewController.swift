@@ -9,8 +9,10 @@
 import UIKit
 import AVFoundation
 
-class MiddleView: UIViewController {
-
+class CameraViewController: UIViewController {
+    
+    var captureSession = AVCaptureSession()
+    
     @IBAction func shutterButtonDidTap(_ sender: Any) {
         
         

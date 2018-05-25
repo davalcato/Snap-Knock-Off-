@@ -21,14 +21,14 @@ class ContainerView: UIViewController {
         self.scroll.addSubview(left.view)
         self.didMove(toParentViewController: self)
         
-        let middle = self.storyboard?.instantiateViewController(withIdentifier: "middle") as! MiddleView
-        self.addChildViewController(middle)
-        self.scroll.addSubview(middle.view)
+        let CameraView = self.storyboard?.instantiateViewController(withIdentifier: "CameraView") as! CameraViewController
+        self.addChildViewController(CameraView)
+        self.scroll.addSubview(CameraView.view)
         self.didMove(toParentViewController: self)
         
-        var middleFrame: CGRect = middle.view.frame
-        middleFrame.origin.x = self.view.frame.width
-        middle.view.frame = middleFrame
+        var CameraViewFrame: CGRect = CameraView.view.frame
+        CameraViewFrame.origin.x = self.view.frame.width
+        CameraView.view.frame = CameraViewFrame
         
         let right = self.storyboard?.instantiateViewController(withIdentifier: "rightViewNav") as! UINavigationController
         
