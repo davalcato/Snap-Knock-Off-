@@ -181,7 +181,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8og-hG-SvC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3382" y="-475"/>
+            <point key="canvasLocation" x="3145" y="-476"/>
         </scene>
         <!--Chat-->
         <scene sceneID="0Tk-SQ-5M6">
@@ -230,13 +230,35 @@
                     <view key="view" contentMode="scaleToFill" id="fTc-7F-w2Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.29404310230000003" green="0.97647058819999999" blue="0.7929590916" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxS-Zt-ivi">
+                                <rect key="frame" x="163" y="513" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-circle-filled"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sMp-Gp-Xkx">
+                                <rect key="frame" x="16" y="597" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-inbox-50"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yf-Mf-ZPD">
+                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-feed"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIF-Dw-BYR">
+                                <rect key="frame" x="162" y="53" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="icons8-stop-filled-50"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="paB-0k-Xwy"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UAV-4P-nNJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3968.8000000000002" y="283.80809595202402"/>
+            <point key="canvasLocation" x="3887" y="284"/>
         </scene>
         <!--Container View-->
         <scene sceneID="Ja5-Sm-tUx">
@@ -265,7 +287,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ajr-ld-RL1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3030" y="1063"/>
+            <point key="canvasLocation" x="3145" y="1030"/>
         </scene>
         <!--Right View-->
         <scene sceneID="8wr-13-zlE">
@@ -280,7 +302,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7XP-Fg-9Lb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4820" y="283.80809595202402"/>
+            <point key="canvasLocation" x="4682" y="284"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="TGy-Pd-CwU">
@@ -414,6 +436,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-circle-filled" width="50" height="50"/>
+        <image name="icons8-feed" width="50" height="50"/>
+        <image name="icons8-inbox-50" width="50" height="50"/>
+        <image name="icons8-stop-filled-50" width="50" height="50"/>
         <image name="logo" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
