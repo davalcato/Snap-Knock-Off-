@@ -83,9 +83,11 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uoN-fG-IZa">
                                 <rect key="frame" x="0.0" y="20" width="48" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="RMt-1D-Pma"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="3eJ-z6-Sur"/>
+                                    <constraint firstAttribute="width" constant="48" id="8GI-s7-4xY"/>
+                                    <constraint firstAttribute="height" constant="30" id="byM-Nx-D1d"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="23"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="22"/>
                                 <state key="normal" title="&lt;">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
@@ -190,12 +192,12 @@
                             <constraint firstItem="Jif-oz-EO5" firstAttribute="top" secondItem="U0q-hr-bOZ" secondAttribute="bottom" constant="54" id="HfD-lJ-diO"/>
                             <constraint firstItem="uE1-A2-9lE" firstAttribute="leading" secondItem="mBr-Zb-1Bn" secondAttribute="leading" constant="113" id="IEv-uL-Rgm"/>
                             <constraint firstItem="FSf-nL-5Yu" firstAttribute="top" secondItem="fCg-JG-3L2" secondAttribute="bottom" constant="17" id="MR3-ag-GYK"/>
-                            <constraint firstItem="uoN-fG-IZa" firstAttribute="leading" secondItem="n1u-Hp-f7a" secondAttribute="leading" id="Pjl-DS-4Np"/>
-                            <constraint firstItem="mBr-Zb-1Bn" firstAttribute="trailing" secondItem="uoN-fG-IZa" secondAttribute="trailing" constant="327" id="Qze-B5-4q5"/>
+                            <constraint firstItem="uoN-fG-IZa" firstAttribute="leading" secondItem="n1u-Hp-f7a" secondAttribute="leading" id="PKi-ae-14o"/>
+                            <constraint firstItem="uoN-fG-IZa" firstAttribute="top" secondItem="mBr-Zb-1Bn" secondAttribute="top" id="Qf3-CP-vF0"/>
                             <constraint firstItem="mBr-Zb-1Bn" firstAttribute="trailing" secondItem="FSf-nL-5Yu" secondAttribute="trailing" constant="25" id="Raw-ZY-wOF"/>
                             <constraint firstItem="U0q-hr-bOZ" firstAttribute="centerX" secondItem="n1u-Hp-f7a" secondAttribute="centerX" id="cCZ-L8-fHT"/>
                             <constraint firstItem="Jif-oz-EO5" firstAttribute="leading" secondItem="mBr-Zb-1Bn" secondAttribute="leading" constant="25" id="gFh-LQ-a9s"/>
-                            <constraint firstItem="uoN-fG-IZa" firstAttribute="top" secondItem="mBr-Zb-1Bn" secondAttribute="top" id="hA5-27-7kG"/>
+                            <constraint firstItem="mBr-Zb-1Bn" firstAttribute="trailing" secondItem="uoN-fG-IZa" secondAttribute="trailing" constant="327" id="lRs-Ea-Oyz"/>
                             <constraint firstItem="mBr-Zb-1Bn" firstAttribute="trailing" secondItem="Jif-oz-EO5" secondAttribute="trailing" constant="25" id="uZz-qq-WXT"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mBr-Zb-1Bn"/>
@@ -619,6 +621,6 @@
         <image name="logo" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eu2-Cm-EUl"/>
+        <segue reference="bNh-dx-oQO"/>
     </inferredMetricsTieBreakers>
 </document>
