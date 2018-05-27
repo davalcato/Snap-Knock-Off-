@@ -117,7 +117,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jif-oz-EO5" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="222" width="325" height="30"/>
+                                <rect key="frame" x="25" y="237" width="325" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="7zb-gQ-DgV"/>
                                     <constraint firstAttribute="height" constant="30" id="zk4-Vr-RXg"/>
@@ -138,7 +138,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fCg-JG-3L2" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="270" width="325" height="30"/>
+                                <rect key="frame" x="25" y="285" width="325" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Rlw-1A-aMd"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="UT0-HF-PtH"/>
@@ -159,7 +159,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FSf-nL-5Yu" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="317" width="325" height="30"/>
+                                <rect key="frame" x="25" y="332" width="325" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="325" id="309-lJ-LJV"/>
                                     <constraint firstAttribute="height" constant="30" id="keI-x0-kbr"/>
@@ -189,7 +189,7 @@
                             <constraint firstItem="mBr-Zb-1Bn" firstAttribute="bottom" secondItem="uE1-A2-9lE" secondAttribute="bottom" constant="21" id="EJw-Rg-XKs"/>
                             <constraint firstItem="fCg-JG-3L2" firstAttribute="leading" secondItem="mBr-Zb-1Bn" secondAttribute="leading" constant="25" id="FRI-ER-cbX"/>
                             <constraint firstItem="mBr-Zb-1Bn" firstAttribute="trailing" secondItem="fCg-JG-3L2" secondAttribute="trailing" constant="25" id="GpD-K5-0Iq"/>
-                            <constraint firstItem="Jif-oz-EO5" firstAttribute="top" secondItem="U0q-hr-bOZ" secondAttribute="bottom" constant="54" id="HfD-lJ-diO"/>
+                            <constraint firstItem="Jif-oz-EO5" firstAttribute="top" secondItem="U0q-hr-bOZ" secondAttribute="bottom" constant="69" id="HfD-lJ-diO"/>
                             <constraint firstItem="uE1-A2-9lE" firstAttribute="leading" secondItem="mBr-Zb-1Bn" secondAttribute="leading" constant="113" id="IEv-uL-Rgm"/>
                             <constraint firstItem="FSf-nL-5Yu" firstAttribute="top" secondItem="fCg-JG-3L2" secondAttribute="bottom" constant="17" id="MR3-ag-GYK"/>
                             <constraint firstItem="uoN-fG-IZa" firstAttribute="leading" secondItem="n1u-Hp-f7a" secondAttribute="leading" id="PKi-ae-14o"/>
@@ -496,7 +496,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M5d-43-fGj" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="241" width="325" height="44"/>
+                                <rect key="frame" x="25" y="249" width="325" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="aQ1-rv-81e"/>
                                 </constraints>
@@ -516,7 +516,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pvy-ZH-uf3" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                <rect key="frame" x="25" y="293" width="325" height="44"/>
+                                <rect key="frame" x="25" y="301" width="325" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="pNc-oy-IQZ"/>
                                 </constraints>
@@ -561,10 +561,10 @@
                             <constraint firstItem="M5d-43-fGj" firstAttribute="leading" secondItem="axe-MU-Uck" secondAttribute="leading" constant="25" id="Rh1-xB-8x8"/>
                             <constraint firstItem="pvy-ZH-uf3" firstAttribute="top" secondItem="M5d-43-fGj" secondAttribute="bottom" constant="8" symbolic="YES" id="Wxh-9x-ZEU"/>
                             <constraint firstItem="upZ-9m-7ke" firstAttribute="top" secondItem="axe-MU-Uck" secondAttribute="top" id="Yzm-P0-5hK"/>
-                            <constraint firstItem="YSa-OC-NEM" firstAttribute="top" secondItem="pvy-ZH-uf3" secondAttribute="bottom" constant="53" id="aN3-od-gQx"/>
+                            <constraint firstItem="YSa-OC-NEM" firstAttribute="top" secondItem="pvy-ZH-uf3" secondAttribute="bottom" constant="45" id="aN3-od-gQx"/>
                             <constraint firstItem="pvy-ZH-uf3" firstAttribute="centerX" secondItem="YSa-OC-NEM" secondAttribute="centerX" id="cFE-gn-TSR"/>
                             <constraint firstItem="yag-aB-74O" firstAttribute="top" secondItem="axe-MU-Uck" secondAttribute="top" constant="142" id="oGe-mO-w7R"/>
-                            <constraint firstItem="M5d-43-fGj" firstAttribute="top" secondItem="yag-aB-74O" secondAttribute="bottom" constant="49" id="sOM-db-s1u"/>
+                            <constraint firstItem="M5d-43-fGj" firstAttribute="top" secondItem="yag-aB-74O" secondAttribute="bottom" constant="57" id="sOM-db-s1u"/>
                             <constraint firstItem="YSa-OC-NEM" firstAttribute="centerX" secondItem="t46-l4-JSk" secondAttribute="centerX" id="tGl-Ci-HrT"/>
                             <constraint firstAttribute="bottom" secondItem="4vX-LC-L6h" secondAttribute="bottom" constant="20" symbolic="YES" id="uM7-zT-JSG"/>
                             <constraint firstItem="yag-aB-74O" firstAttribute="centerX" secondItem="M5d-43-fGj" secondAttribute="centerX" id="uv0-En-rJX"/>
