@@ -119,10 +119,10 @@
 		755544C420B517CF00F34744 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				752300D020B39B5B00798457 /* AppDelegate.swift */,
 				752300D720B39B5F00798457 /* Assets.xcassets */,
 				752300D920B39B5F00798457 /* LaunchScreen.storyboard */,
 				752300DC20B39B5F00798457 /* Info.plist */,
-				752300D020B39B5B00798457 /* AppDelegate.swift */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";

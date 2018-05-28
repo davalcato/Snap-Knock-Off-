@@ -1,5 +1,5 @@
 //
-//  MiddleView.swift
+//  CameraViewController.swift
 //  Snap(Knock-Off)
 //
 //  Created by Daval Cato on 5/22/18.
@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 
 
-class CameraViewController: UIViewController {
+class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     var captureSession = AVCaptureSession()
     
@@ -20,7 +20,7 @@ class CameraViewController: UIViewController {
     var currentDevice: AVCaptureDevice?
     
     // output device
-    var stillImageOutput:  AVCapturePhotoOutput?
+    var photoOutput:  AVCapturePhotoOutput?
     var stillImage: UIImage?
     
     // camera preview layer
@@ -54,31 +54,37 @@ class CameraViewController: UIViewController {
         // configure the session with the output for capturing our still image
 //        stillImageOutput = AVCapturePhotoOutput()
 //        stillImageOutput?.outputSettings = [AVVideoCodecKey : AVVideoCodecJPEG]
-//        let stimageout = AVCapturePhotoOutput()
-//        let settings = AVCapturePhotoSettings()
-//
-//        if #available(iOS 11.0, *) {
-//            settings.livePhotoVideoCodecType = .jpeg
-//        } else {
-//            // Fallback on earlier versions
-//        };if #available(iOS 11.0, *) {
-//            settings.livePhotoVideoCodecType = .jpeg
-//        } else {
-//            // Fallback on earlier versions
-//        }
-//        stimageout.capturePhoto(with: settings, delegate: self as! AVCapturePhotoCaptureDelegate)
+        let stimageout = AVCapturePhotoOutput()
+        let settings = AVCapturePhotoSettings()
+        if #available(iOS 11.0, *) {
+            settings.livePhotoVideoCodecType = .jpeg
+        } else {
+            // Fallback on earlier versions
+        }
+
+        if #available(iOS 11.0, *) {
+            settings.livePhotoVideoCodecType = .jpeg
+        } else {
+            // Fallback on earlier versions
+        };if #available(iOS 11.0, *) {
+            settings.livePhotoVideoCodecType = .jpeg
+        } else {
+                    // Fallback on earlier versions 
+        }
+        stimageout.capturePhoto(with: settings, delegate: self as AVCapturePhotoCaptureDelegate)
         
         do {
             let captureDeviceInput = try AVCaptureDeviceInput(device: currentDevice!)
-            
             captureSession.addInput(captureDeviceInput)
-            captureSession.addOutput(stillImageOutput!)
+            captureSession.addOutput(photoOutput!)
             
             // set up the camera preview layer
             cameraPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
             view.layer.addSublayer(cameraPreviewLayer!)
             cameraPreviewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
             cameraPreviewLayer?.frame = view.layer.frame
+            cameraPreviewLayer?.connection?.videoOrientation = AVCaptureVideoOrientation.portrait
+            
             
             
             captureSession.startRunning()
