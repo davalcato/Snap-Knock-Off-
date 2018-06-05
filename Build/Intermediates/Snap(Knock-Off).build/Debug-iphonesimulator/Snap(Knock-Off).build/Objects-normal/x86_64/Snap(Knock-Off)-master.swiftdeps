@@ -1,9 +1,9 @@
 version: "Apple Swift version 4.1.1 (swiftlang-902.0.53 clang-902.0.39.2)"
 options: "3122bf21d37e86885bb8915d55110467"
-build_time: [1527536420, 798691000]
+build_time: [1528162700, 643707000]
 inputs:
   "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/ContainerView.swift": [1527535835, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/CameraViewController.swift": [1527533372, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/CameraViewController.swift": [1527823657, 0]
   "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/MessageCellView.swift": [1527187549, 0]
   "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/RightView.swift": [1527046616, 0]
   "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Supporting Files/AppDelegate.swift": [1527536356, 0]

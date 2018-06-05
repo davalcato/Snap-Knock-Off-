@@ -198,11 +198,13 @@ SWIFT_CLASS("_TtC15Snap_Knock_Off_11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 @class NSBundle;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC15Snap_Knock_Off_20CameraViewController")
 @interface CameraViewController : UIViewController <AVCapturePhotoCaptureDelegate>
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified cameraButton;
 - (void)viewDidLoad;
 - (IBAction)shutterButtonDidTap:(id _Nonnull)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;

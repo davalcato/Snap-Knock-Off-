@@ -8,9 +8,11 @@
 
 import UIKit
 import AVFoundation
-
+import Photos
 
 class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
+    
+    @IBOutlet weak var cameraButton: UIButton!
     
     var captureSession = AVCaptureSession()
     
@@ -20,11 +22,13 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var currentDevice: AVCaptureDevice?
     
     // output device
-    var photoOutput:  AVCapturePhotoOutput?
-    var stillImage: UIImage?
+    var photoOutput: AVCapturePhotoOutput?
+    
     
     // camera preview layer
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
+    
+    var stillImage: UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,11 +43,11 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
 //                backFacingCamera = device
 //            } else if device.position == .front {
 //                frontFacingCamera = device
-        for device in devices {
-            if device.position == AVCaptureDevice.Position.back {
-                backFacingCamera = device
-            } else if device.position == AVCaptureDevice.Position.front {
-                frontFacingCamera = device
+        for device in devices{
+            if device.position == AVCaptureDevice.Position.front {
+                self.currentDevice = device
+            } else if device.position == AVCaptureDevice.Position.back {
+                self.currentDevice = device
             }
             
         }
@@ -61,17 +65,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
         } else {
             // Fallback on earlier versions
         }
-
-        if #available(iOS 11.0, *) {
-            settings.livePhotoVideoCodecType = .jpeg
-        } else {
-            // Fallback on earlier versions
-        };if #available(iOS 11.0, *) {
-            settings.livePhotoVideoCodecType = .jpeg
-        } else {
-                    // Fallback on earlier versions 
-        }
-        stimageout.capturePhoto(with: settings, delegate: self as AVCapturePhotoCaptureDelegate)
+        stimageout.capturePhoto(with: settings, delegate: self)
         
         do {
             let captureDeviceInput = try AVCaptureDeviceInput(device: currentDevice!)
@@ -85,6 +79,7 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
             cameraPreviewLayer?.frame = view.layer.frame
             cameraPreviewLayer?.connection?.videoOrientation = AVCaptureVideoOrientation.portrait
             
+            view.bringSubview(toFront: cameraButton)
             
             
             captureSession.startRunning()
@@ -100,3 +95,29 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     }
     
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
