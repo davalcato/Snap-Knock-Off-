@@ -26,6 +26,8 @@ depends-top-level:
 - "CGPoint"
 - "CGRect"
 - !private "CGSize"
+- "FloatLiteralType"
+- "IntegerLiteralType"
 - "MadokaTextField"
 - "String"
 - "TextFieldEffects"
@@ -105,22 +107,22 @@ depends-member:
 - !private ["So12CAShapeLayerC", "path"]
 - !private ["So12CAShapeLayerC", "strokeColor"]
 - !private ["So12CAShapeLayerC", "strokeEnd"]
-- !private ["SC17CGAffineTransformV", "concatenating"]
-- !private ["SC17CGAffineTransformV", "identity"]
-- !private ["SC17CGAffineTransformV", "init"]
-- ["SC7CGPointV", "init"]
-- !private ["SC7CGPointV", "x"]
-- !private ["SC7CGPointV", "y"]
-- !private ["SC7CGPointV", "zero"]
-- !private ["SC6CGRectV", "height"]
-- !private ["SC6CGRectV", "init"]
-- !private ["SC6CGRectV", "insetBy"]
-- !private ["SC6CGRectV", "origin"]
-- !private ["SC6CGRectV", "size"]
-- !private ["SC6CGRectV", "width"]
-- !private ["SC6CGSizeV", "height"]
-- !private ["SC6CGSizeV", "init"]
-- !private ["SC6CGSizeV", "width"]
+- !private ["So17CGAffineTransformV", "concatenating"]
+- !private ["So17CGAffineTransformV", "identity"]
+- !private ["So17CGAffineTransformV", "init"]
+- ["So7CGPointV", "init"]
+- !private ["So7CGPointV", "x"]
+- !private ["So7CGPointV", "y"]
+- !private ["So7CGPointV", "zero"]
+- !private ["So6CGRectV", "height"]
+- !private ["So6CGRectV", "init"]
+- !private ["So6CGRectV", "insetBy"]
+- !private ["So6CGRectV", "origin"]
+- !private ["So6CGRectV", "size"]
+- !private ["So6CGRectV", "width"]
+- !private ["So6CGSizeV", "height"]
+- !private ["So6CGSizeV", "init"]
+- !private ["So6CGSizeV", "width"]
 - ["s7CVarArgP", "CAShapeLayer"]
 - !private ["s7CVarArgP", "CGAffineTransform"]
 - ["s7CVarArgP", "CGPoint"]
@@ -532,7 +534,7 @@ depends-member:
 - !private ["16TextFieldEffects06MadokaaB0C", "borderLayer"]
 - !private ["16TextFieldEffects06MadokaaB0C", "borderThickness"]
 - ["16TextFieldEffects06MadokaaB0C", "bounds"]
-- ["16TextFieldEffects06MadokaaB0C", "deinit"]
+- !private ["16TextFieldEffects06MadokaaB0C", "deinit"]
 - ["16TextFieldEffects06MadokaaB0C", "drawViewsForRect"]
 - ["16TextFieldEffects06MadokaaB0C", "editingRect"]
 - !private ["16TextFieldEffects06MadokaaB0C", "font"]
@@ -700,65 +702,65 @@ depends-member:
 - !private ["So8NSObjectC", "transform"]
 - ["So8NSObjectC", "updateBorder"]
 - ["So8NSObjectC", "updatePlaceholder"]
-- ["So16NSObjectProtocolP", "CAShapeLayer"]
-- !private ["So16NSObjectProtocolP", "CGAffineTransform"]
-- ["So16NSObjectProtocolP", "CGPoint"]
-- !private ["So16NSObjectProtocolP", "CGRect"]
-- !private ["So16NSObjectProtocolP", "CGSize"]
-- !private ["So16NSObjectProtocolP", "UIBezierPath"]
-- !private ["So16NSObjectProtocolP", "UIFont"]
-- !private ["So16NSObjectProtocolP", "UIView"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addLine"]
-- !private ["So16NSObjectProtocolP", "addSublayer"]
-- !private ["So16NSObjectProtocolP", "addSubview"]
-- !private ["So16NSObjectProtocolP", "animate"]
-- !private ["So16NSObjectProtocolP", "animateViewsForTextEntry"]
-- !private ["So16NSObjectProtocolP", "animationCompletionHandler"]
-- ["So16NSObjectProtocolP", "black"]
-- !private ["So16NSObjectProtocolP", "borderColor"]
-- !private ["So16NSObjectProtocolP", "borderLayer"]
-- !private ["So16NSObjectProtocolP", "borderThickness"]
-- !private ["So16NSObjectProtocolP", "bounds"]
-- !private ["So16NSObjectProtocolP", "cgColor"]
-- !private ["So16NSObjectProtocolP", "cgPath"]
-- !private ["So16NSObjectProtocolP", "close"]
-- !private ["So16NSObjectProtocolP", "fillColor"]
-- !private ["So16NSObjectProtocolP", "font"]
-- !private ["So16NSObjectProtocolP", "fontName"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isEmpty"]
-- !private ["So16NSObjectProtocolP", "isFirstResponder"]
-- !private ["So16NSObjectProtocolP", "isNotEmpty"]
-- !private ["So16NSObjectProtocolP", "kCALineCapSquare"]
-- !private ["So16NSObjectProtocolP", "layer"]
-- !private ["So16NSObjectProtocolP", "layoutPlaceholderInTextRect"]
-- !private ["So16NSObjectProtocolP", "lineCap"]
-- !private ["So16NSObjectProtocolP", "lineHeight"]
-- !private ["So16NSObjectProtocolP", "lineWidth"]
-- !private ["So16NSObjectProtocolP", "move"]
-- !private ["So16NSObjectProtocolP", "path"]
-- !private ["So16NSObjectProtocolP", "percentageForBottomBorder"]
-- !private ["So16NSObjectProtocolP", "placeholder"]
-- !private ["So16NSObjectProtocolP", "placeholderColor"]
-- !private ["So16NSObjectProtocolP", "placeholderFontFromFont"]
-- !private ["So16NSObjectProtocolP", "placeholderFontScale"]
-- !private ["So16NSObjectProtocolP", "placeholderInsets"]
-- !private ["So16NSObjectProtocolP", "placeholderLabel"]
-- !private ["So16NSObjectProtocolP", "pointSize"]
-- !private ["So16NSObjectProtocolP", "rectForBorder"]
-- !private ["So16NSObjectProtocolP", "sizeToFit"]
-- !private ["So16NSObjectProtocolP", "strokeColor"]
-- !private ["So16NSObjectProtocolP", "strokeEnd"]
-- !private ["So16NSObjectProtocolP", "text"]
-- !private ["So16NSObjectProtocolP", "textAlignment"]
-- !private ["So16NSObjectProtocolP", "textColor"]
-- !private ["So16NSObjectProtocolP", "textFieldInsets"]
-- !private ["So16NSObjectProtocolP", "textRect"]
-- !private ["So16NSObjectProtocolP", "transform"]
-- !private ["So16NSObjectProtocolP", "updateBorder"]
-- !private ["So16NSObjectProtocolP", "updatePlaceholder"]
+- ["So8NSObjectP", "CAShapeLayer"]
+- !private ["So8NSObjectP", "CGAffineTransform"]
+- ["So8NSObjectP", "CGPoint"]
+- !private ["So8NSObjectP", "CGRect"]
+- !private ["So8NSObjectP", "CGSize"]
+- !private ["So8NSObjectP", "UIBezierPath"]
+- !private ["So8NSObjectP", "UIFont"]
+- !private ["So8NSObjectP", "UIView"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addLine"]
+- !private ["So8NSObjectP", "addSublayer"]
+- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "animate"]
+- !private ["So8NSObjectP", "animateViewsForTextEntry"]
+- !private ["So8NSObjectP", "animationCompletionHandler"]
+- ["So8NSObjectP", "black"]
+- !private ["So8NSObjectP", "borderColor"]
+- !private ["So8NSObjectP", "borderLayer"]
+- !private ["So8NSObjectP", "borderThickness"]
+- !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "cgPath"]
+- !private ["So8NSObjectP", "close"]
+- !private ["So8NSObjectP", "fillColor"]
+- !private ["So8NSObjectP", "font"]
+- !private ["So8NSObjectP", "fontName"]
+- !private ["So8NSObjectP", "frame"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEmpty"]
+- !private ["So8NSObjectP", "isFirstResponder"]
+- !private ["So8NSObjectP", "isNotEmpty"]
+- !private ["So8NSObjectP", "kCALineCapSquare"]
+- !private ["So8NSObjectP", "layer"]
+- !private ["So8NSObjectP", "layoutPlaceholderInTextRect"]
+- !private ["So8NSObjectP", "lineCap"]
+- !private ["So8NSObjectP", "lineHeight"]
+- !private ["So8NSObjectP", "lineWidth"]
+- !private ["So8NSObjectP", "move"]
+- !private ["So8NSObjectP", "path"]
+- !private ["So8NSObjectP", "percentageForBottomBorder"]
+- !private ["So8NSObjectP", "placeholder"]
+- !private ["So8NSObjectP", "placeholderColor"]
+- !private ["So8NSObjectP", "placeholderFontFromFont"]
+- !private ["So8NSObjectP", "placeholderFontScale"]
+- !private ["So8NSObjectP", "placeholderInsets"]
+- !private ["So8NSObjectP", "placeholderLabel"]
+- !private ["So8NSObjectP", "pointSize"]
+- !private ["So8NSObjectP", "rectForBorder"]
+- !private ["So8NSObjectP", "sizeToFit"]
+- !private ["So8NSObjectP", "strokeColor"]
+- !private ["So8NSObjectP", "strokeEnd"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "textAlignment"]
+- !private ["So8NSObjectP", "textColor"]
+- !private ["So8NSObjectP", "textFieldInsets"]
+- !private ["So8NSObjectP", "textRect"]
+- !private ["So8NSObjectP", "transform"]
+- !private ["So8NSObjectP", "updateBorder"]
+- !private ["So8NSObjectP", "updatePlaceholder"]
 - !private ["So14NSSecureCodingP", "addLine"]
 - !private ["So14NSSecureCodingP", "addSublayer"]
 - ["So14NSSecureCodingP", "black"]
@@ -777,8 +779,8 @@ depends-member:
 - !private ["So14NSSecureCodingP", "strokeEnd"]
 - !private ["So8NSStringC", "isEmpty"]
 - !private ["So8NSStringC", "isNotEmpty"]
-- ["SC15NSTextAlignmentO", "center"]
-- ["SC15NSTextAlignmentO", "right"]
+- ["So15NSTextAlignmentV", "center"]
+- ["So15NSTextAlignmentV", "right"]
 - !private ["s26RangeReplaceableCollectionP", "isEmpty"]
 - !private ["s26RangeReplaceableCollectionP", "isNotEmpty"]
 - ["s16RawRepresentableP", "center"]
@@ -812,6 +814,7 @@ depends-member:
 - ["16TextFieldEffectsAAC", "borderLayer"]
 - ["16TextFieldEffectsAAC", "borderThickness"]
 - ["16TextFieldEffectsAAC", "bounds"]
+- !private ["16TextFieldEffectsAAC", "deinit"]
 - ["16TextFieldEffectsAAC", "drawViewsForRect"]
 - ["16TextFieldEffectsAAC", "editingRect"]
 - !private ["16TextFieldEffectsAAC", "font"]
@@ -1214,6 +1217,47 @@ depends-member:
 - !private ["So11UIFocusItemP", "transform"]
 - !private ["So11UIFocusItemP", "updateBorder"]
 - !private ["So11UIFocusItemP", "updatePlaceholder"]
+- ["So20UIFocusItemContainerP", "CAShapeLayer"]
+- !private ["So20UIFocusItemContainerP", "CGAffineTransform"]
+- ["So20UIFocusItemContainerP", "CGPoint"]
+- !private ["So20UIFocusItemContainerP", "CGRect"]
+- !private ["So20UIFocusItemContainerP", "CGSize"]
+- !private ["So20UIFocusItemContainerP", "UIBezierPath"]
+- !private ["So20UIFocusItemContainerP", "UIFont"]
+- !private ["So20UIFocusItemContainerP", "UIView"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "animate"]
+- !private ["So20UIFocusItemContainerP", "animateViewsForTextEntry"]
+- !private ["So20UIFocusItemContainerP", "animationCompletionHandler"]
+- !private ["So20UIFocusItemContainerP", "borderColor"]
+- !private ["So20UIFocusItemContainerP", "borderLayer"]
+- !private ["So20UIFocusItemContainerP", "borderThickness"]
+- !private ["So20UIFocusItemContainerP", "bounds"]
+- !private ["So20UIFocusItemContainerP", "font"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isFirstResponder"]
+- !private ["So20UIFocusItemContainerP", "kCALineCapSquare"]
+- !private ["So20UIFocusItemContainerP", "layer"]
+- !private ["So20UIFocusItemContainerP", "layoutPlaceholderInTextRect"]
+- !private ["So20UIFocusItemContainerP", "percentageForBottomBorder"]
+- !private ["So20UIFocusItemContainerP", "placeholder"]
+- !private ["So20UIFocusItemContainerP", "placeholderColor"]
+- !private ["So20UIFocusItemContainerP", "placeholderFontFromFont"]
+- !private ["So20UIFocusItemContainerP", "placeholderFontScale"]
+- !private ["So20UIFocusItemContainerP", "placeholderInsets"]
+- !private ["So20UIFocusItemContainerP", "placeholderLabel"]
+- !private ["So20UIFocusItemContainerP", "rectForBorder"]
+- !private ["So20UIFocusItemContainerP", "sizeToFit"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "textAlignment"]
+- !private ["So20UIFocusItemContainerP", "textColor"]
+- !private ["So20UIFocusItemContainerP", "textFieldInsets"]
+- !private ["So20UIFocusItemContainerP", "textRect"]
+- !private ["So20UIFocusItemContainerP", "transform"]
+- !private ["So20UIFocusItemContainerP", "updateBorder"]
+- !private ["So20UIFocusItemContainerP", "updatePlaceholder"]
 - !private ["So6UIFontC", "fontName"]
 - !private ["So6UIFontC", "init"]
 - !private ["So6UIFontC", "lineHeight"]
@@ -1653,6 +1697,47 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "transform"]
 - !private ["So18UITraitEnvironmentP", "updateBorder"]
 - !private ["So18UITraitEnvironmentP", "updatePlaceholder"]
+- ["So23UIUserActivityRestoringP", "CAShapeLayer"]
+- !private ["So23UIUserActivityRestoringP", "CGAffineTransform"]
+- ["So23UIUserActivityRestoringP", "CGPoint"]
+- !private ["So23UIUserActivityRestoringP", "CGRect"]
+- !private ["So23UIUserActivityRestoringP", "CGSize"]
+- !private ["So23UIUserActivityRestoringP", "UIBezierPath"]
+- !private ["So23UIUserActivityRestoringP", "UIFont"]
+- !private ["So23UIUserActivityRestoringP", "UIView"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "animate"]
+- !private ["So23UIUserActivityRestoringP", "animateViewsForTextEntry"]
+- !private ["So23UIUserActivityRestoringP", "animationCompletionHandler"]
+- !private ["So23UIUserActivityRestoringP", "borderColor"]
+- !private ["So23UIUserActivityRestoringP", "borderLayer"]
+- !private ["So23UIUserActivityRestoringP", "borderThickness"]
+- !private ["So23UIUserActivityRestoringP", "bounds"]
+- !private ["So23UIUserActivityRestoringP", "font"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isFirstResponder"]
+- !private ["So23UIUserActivityRestoringP", "kCALineCapSquare"]
+- !private ["So23UIUserActivityRestoringP", "layer"]
+- !private ["So23UIUserActivityRestoringP", "layoutPlaceholderInTextRect"]
+- !private ["So23UIUserActivityRestoringP", "percentageForBottomBorder"]
+- !private ["So23UIUserActivityRestoringP", "placeholder"]
+- !private ["So23UIUserActivityRestoringP", "placeholderColor"]
+- !private ["So23UIUserActivityRestoringP", "placeholderFontFromFont"]
+- !private ["So23UIUserActivityRestoringP", "placeholderFontScale"]
+- !private ["So23UIUserActivityRestoringP", "placeholderInsets"]
+- !private ["So23UIUserActivityRestoringP", "placeholderLabel"]
+- !private ["So23UIUserActivityRestoringP", "rectForBorder"]
+- !private ["So23UIUserActivityRestoringP", "sizeToFit"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "textAlignment"]
+- !private ["So23UIUserActivityRestoringP", "textColor"]
+- !private ["So23UIUserActivityRestoringP", "textFieldInsets"]
+- !private ["So23UIUserActivityRestoringP", "textRect"]
+- !private ["So23UIUserActivityRestoringP", "transform"]
+- !private ["So23UIUserActivityRestoringP", "updateBorder"]
+- !private ["So23UIUserActivityRestoringP", "updatePlaceholder"]
 - ["So6UIViewC", "CAShapeLayer"]
 - !private ["So6UIViewC", "CGAffineTransform"]
 - ["So6UIViewC", "CGFloat"]
@@ -1839,10 +1924,10 @@ depends-nominal:
 - "So15CALayerDelegateP"
 - "So13CAMediaTimingP"
 - "So12CAShapeLayerC"
-- !private "SC17CGAffineTransformV"
-- "SC7CGPointV"
-- !private "SC6CGRectV"
-- !private "SC6CGSizeV"
+- !private "So17CGAffineTransformV"
+- "So7CGPointV"
+- !private "So6CGRectV"
+- !private "So6CGSizeV"
 - "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
@@ -1867,10 +1952,10 @@ depends-nominal:
 - "So21NSItemProviderWritingP"
 - !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- "SC15NSTextAlignmentO"
+- "So15NSTextAlignmentV"
 - !private "s26RangeReplaceableCollectionP"
 - "s16RawRepresentableP"
 - !private "s8SequenceP"
@@ -1890,6 +1975,7 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - !private "So6UIFontC"
 - "So10UIKeyInputP"
 - !private "So7UILabelC"
@@ -1903,6 +1989,7 @@ depends-nominal:
 - "So17UITextInputTraitsP"
 - "So34UITextPasteConfigurationSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -1933,14 +2020,14 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h"
 - "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Intermediates/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/TextFieldEffects.build/unextended-module.modulemap"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "bed8a7631f0046f01f916a0c4a35e76f"

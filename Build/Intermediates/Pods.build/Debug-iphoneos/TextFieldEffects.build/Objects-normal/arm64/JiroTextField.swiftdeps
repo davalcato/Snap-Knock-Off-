@@ -40,10 +40,10 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "isEmpty"]
 - !private ["s23BidirectionalCollectionP", "isNotEmpty"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["So7CALayerC", "addSublayer"]
 - !private ["So7CALayerC", "backgroundColor"]
 - !private ["So7CALayerC", "frame"]
 - ["So7CALayerC", "init"]
+- !private ["So7CALayerC", "insertSublayer"]
 - ["So15CALayerDelegateP", "CALayer"]
 - ["So15CALayerDelegateP", "CGPoint"]
 - !private ["So15CALayerDelegateP", "CGRect"]
@@ -81,10 +81,10 @@ depends-member:
 - !private ["So15CALayerDelegateP", "textRect"]
 - !private ["So15CALayerDelegateP", "updateBorder"]
 - !private ["So15CALayerDelegateP", "updatePlaceholder"]
-- !private ["So13CAMediaTimingP", "addSublayer"]
 - !private ["So13CAMediaTimingP", "backgroundColor"]
 - !private ["So13CAMediaTimingP", "frame"]
 - ["So13CAMediaTimingP", "init"]
+- !private ["So13CAMediaTimingP", "insertSublayer"]
 - ["SC7CGPointV", "init"]
 - !private ["SC7CGPointV", "x"]
 - !private ["SC7CGPointV", "y"]
@@ -107,7 +107,6 @@ depends-member:
 - !private ["s7CVarArgP", "UIView"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "addSublayer"]
 - !private ["s7CVarArgP", "addSubview"]
 - !private ["s7CVarArgP", "alpha"]
 - !private ["s7CVarArgP", "animate"]
@@ -124,6 +123,7 @@ depends-member:
 - !private ["s7CVarArgP", "fontName"]
 - !private ["s7CVarArgP", "frame"]
 - ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "insertSublayer"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "isFirstResponder"]
 - !private ["s7CVarArgP", "isNotEmpty"]
@@ -157,7 +157,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIFont"]
 - !private ["s28CustomDebugStringConvertibleP", "UIView"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "addSublayer"]
 - !private ["s28CustomDebugStringConvertibleP", "addSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "alpha"]
 - !private ["s28CustomDebugStringConvertibleP", "animate"]
@@ -175,6 +174,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insertSublayer"]
 - !private ["s28CustomDebugStringConvertibleP", "insetBy"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "isFirstResponder"]
@@ -239,7 +239,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIView"]
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s23CustomStringConvertibleP", "addSublayer"]
 - !private ["s23CustomStringConvertibleP", "addSubview"]
 - !private ["s23CustomStringConvertibleP", "alpha"]
 - !private ["s23CustomStringConvertibleP", "animate"]
@@ -256,6 +255,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "fontName"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insertSublayer"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
 - !private ["s23CustomStringConvertibleP", "isFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "isNotEmpty"]
@@ -312,7 +312,6 @@ depends-member:
 - !private ["s9EquatableP", "UIView"]
 - ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
-- !private ["s9EquatableP", "addSublayer"]
 - !private ["s9EquatableP", "addSubview"]
 - !private ["s9EquatableP", "alpha"]
 - !private ["s9EquatableP", "animate"]
@@ -332,6 +331,7 @@ depends-member:
 - !private ["s9EquatableP", "frame"]
 - !private ["s9EquatableP", "height"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "insertSublayer"]
 - !private ["s9EquatableP", "insetBy"]
 - !private ["s9EquatableP", "isEmpty"]
 - !private ["s9EquatableP", "isFirstResponder"]
@@ -381,7 +381,6 @@ depends-member:
 - !private ["s8HashableP", "UIView"]
 - ["s8HashableP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "addSublayer"]
 - !private ["s8HashableP", "addSubview"]
 - !private ["s8HashableP", "alpha"]
 - !private ["s8HashableP", "animate"]
@@ -399,6 +398,7 @@ depends-member:
 - !private ["s8HashableP", "fontName"]
 - !private ["s8HashableP", "frame"]
 - ["s8HashableP", "init"]
+- !private ["s8HashableP", "insertSublayer"]
 - !private ["s8HashableP", "isEmpty"]
 - !private ["s8HashableP", "isFirstResponder"]
 - !private ["s8HashableP", "isNotEmpty"]
@@ -476,7 +476,6 @@ depends-member:
 - !private ["So8NSCodingP", "UIFont"]
 - !private ["So8NSCodingP", "UIView"]
 - ["So8NSCodingP", ""]
-- !private ["So8NSCodingP", "addSublayer"]
 - !private ["So8NSCodingP", "addSubview"]
 - !private ["So8NSCodingP", "alpha"]
 - !private ["So8NSCodingP", "animate"]
@@ -492,6 +491,7 @@ depends-member:
 - !private ["So8NSCodingP", "font"]
 - !private ["So8NSCodingP", "frame"]
 - ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "insertSublayer"]
 - !private ["So8NSCodingP", "isEmpty"]
 - !private ["So8NSCodingP", "isFirstResponder"]
 - !private ["So8NSCodingP", "isNotEmpty"]
@@ -540,7 +540,6 @@ depends-member:
 - ["So8NSObjectC", "UIColor"]
 - ["So8NSObjectC", "UIFont"]
 - !private ["So8NSObjectC", "UIView"]
-- !private ["So8NSObjectC", "addSublayer"]
 - !private ["So8NSObjectC", "addSubview"]
 - !private ["So8NSObjectC", "alpha"]
 - !private ["So8NSObjectC", "animate"]
@@ -560,6 +559,7 @@ depends-member:
 - !private ["So8NSObjectC", "fontName"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "insertSublayer"]
 - !private ["So8NSObjectC", "isEmpty"]
 - !private ["So8NSObjectC", "isFirstResponder"]
 - !private ["So8NSObjectC", "isNotEmpty"]
@@ -589,7 +589,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "UIFont"]
 - !private ["So16NSObjectProtocolP", "UIView"]
 - ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addSublayer"]
 - !private ["So16NSObjectProtocolP", "addSubview"]
 - !private ["So16NSObjectProtocolP", "alpha"]
 - !private ["So16NSObjectProtocolP", "animate"]
@@ -606,6 +605,7 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "fontName"]
 - !private ["So16NSObjectProtocolP", "frame"]
 - ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "insertSublayer"]
 - !private ["So16NSObjectProtocolP", "isEmpty"]
 - !private ["So16NSObjectProtocolP", "isFirstResponder"]
 - !private ["So16NSObjectProtocolP", "isNotEmpty"]
@@ -628,12 +628,12 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "textRect"]
 - !private ["So16NSObjectProtocolP", "updateBorder"]
 - !private ["So16NSObjectProtocolP", "updatePlaceholder"]
-- !private ["So14NSSecureCodingP", "addSublayer"]
 - !private ["So14NSSecureCodingP", "backgroundColor"]
 - ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "cgColor"]
 - !private ["So14NSSecureCodingP", "frame"]
 - ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "insertSublayer"]
 - !private ["So14NSSecureCodingP", "isEmpty"]
 - !private ["So14NSSecureCodingP", "isNotEmpty"]
 - !private ["So8NSStringC", "isEmpty"]
@@ -1540,7 +1540,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSublayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "alpha"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
@@ -1557,6 +1556,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fontName"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "insertSublayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isNotEmpty"]
@@ -1682,29 +1682,29 @@ depends-nominal:
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
 - "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h"
 - "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Intermediates/Pods.build/Debug-iphoneos/TextFieldEffects.build/unextended-module.modulemap"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 interface-hash: "c709715c06542ee1fceb37b7bebb8257"

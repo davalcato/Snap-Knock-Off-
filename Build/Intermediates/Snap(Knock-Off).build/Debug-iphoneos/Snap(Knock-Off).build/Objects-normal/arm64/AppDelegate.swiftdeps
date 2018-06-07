@@ -15,6 +15,7 @@ provides-dynamic-lookup:
 - "window"
 depends-top-level:
 - "AppDelegate"
+- "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
 - "UIApplication"
@@ -42,6 +43,7 @@ depends-member:
 - ["15Snap_Knock_Off_11AppDelegateC", "deinit"]
 - ["15Snap_Knock_Off_11AppDelegateC", "init"]
 - ["15Snap_Knock_Off_11AppDelegateC", "window"]
+- !private ["s7CVarArgP", "UIApplication"]
 - ["s7CVarArgP", ""]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
@@ -56,7 +58,10 @@ depends-member:
 - ["s7CVarArgP", "applicationWillResignActive"]
 - ["s7CVarArgP", "applicationWillTerminate"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "isStatusBarHidden"]
+- !private ["s7CVarArgP", "shared"]
 - ["s7CVarArgP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "application"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
@@ -71,7 +76,10 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "applicationWillResignActive"]
 - ["s28CustomDebugStringConvertibleP", "applicationWillTerminate"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "isStatusBarHidden"]
+- !private ["s28CustomDebugStringConvertibleP", "shared"]
 - ["s28CustomDebugStringConvertibleP", "window"]
+- !private ["s23CustomStringConvertibleP", "UIApplication"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "application"]
 - ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
@@ -86,7 +94,10 @@ depends-member:
 - ["s23CustomStringConvertibleP", "applicationWillResignActive"]
 - ["s23CustomStringConvertibleP", "applicationWillTerminate"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "isStatusBarHidden"]
+- !private ["s23CustomStringConvertibleP", "shared"]
 - ["s23CustomStringConvertibleP", "window"]
+- !private ["s9EquatableP", "UIApplication"]
 - ["s9EquatableP", ""]
 - ["s9EquatableP", "application"]
 - ["s9EquatableP", "applicationDidBecomeActive"]
@@ -101,7 +112,10 @@ depends-member:
 - ["s9EquatableP", "applicationWillResignActive"]
 - ["s9EquatableP", "applicationWillTerminate"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isStatusBarHidden"]
+- !private ["s9EquatableP", "shared"]
 - ["s9EquatableP", "window"]
+- !private ["s8HashableP", "UIApplication"]
 - ["s8HashableP", ""]
 - ["s8HashableP", "application"]
 - ["s8HashableP", "applicationDidBecomeActive"]
@@ -116,6 +130,8 @@ depends-member:
 - ["s8HashableP", "applicationWillResignActive"]
 - ["s8HashableP", "applicationWillTerminate"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "isStatusBarHidden"]
+- !private ["s8HashableP", "shared"]
 - ["s8HashableP", "window"]
 - ["So8NSObjectC", "Bool"]
 - ["So8NSObjectC", "UIApplication"]
@@ -134,7 +150,10 @@ depends-member:
 - ["So8NSObjectC", "applicationWillResignActive"]
 - ["So8NSObjectC", "applicationWillTerminate"]
 - ["So8NSObjectC", "init"]
+- !private ["So8NSObjectC", "isStatusBarHidden"]
+- !private ["So8NSObjectC", "shared"]
 - ["So8NSObjectC", "window"]
+- !private ["So16NSObjectProtocolP", "UIApplication"]
 - ["So16NSObjectProtocolP", ""]
 - ["So16NSObjectProtocolP", "application"]
 - ["So16NSObjectProtocolP", "applicationDidBecomeActive"]
@@ -149,7 +168,12 @@ depends-member:
 - ["So16NSObjectProtocolP", "applicationWillResignActive"]
 - ["So16NSObjectProtocolP", "applicationWillTerminate"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "isStatusBarHidden"]
+- !private ["So16NSObjectProtocolP", "shared"]
 - ["So16NSObjectProtocolP", "window"]
+- !private ["So13UIApplicationC", "isStatusBarHidden"]
+- !private ["So13UIApplicationC", "shared"]
+- !private ["So21UIApplicationDelegateP", "UIApplication"]
 - ["So21UIApplicationDelegateP", ""]
 - ["So21UIApplicationDelegateP", "application"]
 - ["So21UIApplicationDelegateP", "applicationDidBecomeActive"]
@@ -164,6 +188,7 @@ depends-member:
 - ["So21UIApplicationDelegateP", "applicationWillResignActive"]
 - ["So21UIApplicationDelegateP", "applicationWillTerminate"]
 - ["So21UIApplicationDelegateP", "window"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - ["So30UIPasteConfigurationSupportingP", ""]
 - ["So30UIPasteConfigurationSupportingP", "application"]
 - ["So30UIPasteConfigurationSupportingP", "applicationDidBecomeActive"]
@@ -178,6 +203,8 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "applicationWillResignActive"]
 - ["So30UIPasteConfigurationSupportingP", "applicationWillTerminate"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isStatusBarHidden"]
+- !private ["So30UIPasteConfigurationSupportingP", "shared"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "UIApplication"]
@@ -197,7 +224,10 @@ depends-member:
 - ["So11UIResponderC", "applicationWillResignActive"]
 - ["So11UIResponderC", "applicationWillTerminate"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isStatusBarHidden"]
+- !private ["So11UIResponderC", "shared"]
 - ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - ["So30UIResponderStandardEditActionsP", ""]
 - ["So30UIResponderStandardEditActionsP", "application"]
 - ["So30UIResponderStandardEditActionsP", "applicationDidBecomeActive"]
@@ -212,7 +242,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "applicationWillResignActive"]
 - ["So30UIResponderStandardEditActionsP", "applicationWillTerminate"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isStatusBarHidden"]
+- !private ["So30UIResponderStandardEditActionsP", "shared"]
 - ["So30UIResponderStandardEditActionsP", "window"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
@@ -227,6 +260,8 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillResignActive"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationWillTerminate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isStatusBarHidden"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 depends-nominal:
 - "15Snap_Knock_Off_11AppDelegateC"
@@ -237,6 +272,7 @@ depends-nominal:
 - "s8HashableP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- !private "So13UIApplicationC"
 - "So21UIApplicationDelegateP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
@@ -244,27 +280,37 @@ depends-nominal:
 - "10Foundation27_KeyValueCodingAndObservingP"
 depends-dynamic-lookup:
 depends-external:
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreMedia.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/simd.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreLocation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/AVFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreAudio.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Photos.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/SwiftOnoneSupport.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVFoundation.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/Photos.framework/Headers/Photos.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+- "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.4.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.apinotes"
 interface-hash: "39b3012234996ab26d7217426d30560c"

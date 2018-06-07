@@ -8,12 +8,10 @@
 
 import UIKit
 import AVFoundation
-import Photos
 
-class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
+class CameraViewController : UIViewController {
     
     @IBOutlet weak var cameraButton: UIButton!
-    
     var captureSession = AVCaptureSession()
     
     // which camera input do we want to use
@@ -22,78 +20,91 @@ class CameraViewController: UIViewController, AVCapturePhotoCaptureDelegate {
     var currentDevice: AVCaptureDevice?
     
     // output device
-    var photoOutput: AVCapturePhotoOutput?
-    
+    var stillImageOutput: AVCapturePhotoOutput?
+    var stillImage: UIImage?
     
     // camera preview layer
     var cameraPreviewLayer: AVCaptureVideoPreviewLayer?
     
-    var stillImage: UIImage?
+    // double tap to switch from back to front facing camera
+    var toggleCameraGestureRecognizer = UITapGestureRecognizer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         captureSession.sessionPreset = AVCaptureSession.Preset.photo
         
-        let deviceDescoverySession = AVCaptureDevice.DiscoverySession.init(deviceTypes: [AVCaptureDevice.DeviceType.builtInWideAngleCamera], mediaType: AVMediaType.video,
-            position: AVCaptureDevice.Position.unspecified); let devices = deviceDescoverySession.devices
-        
-//        for device in devices {
-//            if device.position == .back {
-//                backFacingCamera = device
-//            } else if device.position == .front {
-//                frontFacingCamera = device
-        for device in devices{
-            if device.position == AVCaptureDevice.Position.front {
-                self.currentDevice = device
-            } else if device.position == AVCaptureDevice.Position.back {
-                self.currentDevice = device
+        let devices = AVCaptureDevice.devices(for: AVMediaType.video) 
+        for device in devices {
+            if device.position == .back {
+                backFacingCamera = device
+            } else if device.position == .front {
+                frontFacingCamera = device
             }
-            
         }
         
         // default device
         currentDevice = frontFacingCamera
         
         // configure the session with the output for capturing our still image
-//        stillImageOutput = AVCapturePhotoOutput()
-//        stillImageOutput?.outputSettings = [AVVideoCodecKey : AVVideoCodecJPEG]
-        let stimageout = AVCapturePhotoOutput()
+        _ = AVCapturePhotoOutput()
         let settings = AVCapturePhotoSettings()
         if #available(iOS 11.0, *) {
             settings.livePhotoVideoCodecType = .jpeg
         } else {
             // Fallback on earlier versions
         }
-        stimageout.capturePhoto(with: settings, delegate: self)
         
         do {
             let captureDeviceInput = try AVCaptureDeviceInput(device: currentDevice!)
+            
             captureSession.addInput(captureDeviceInput)
-            captureSession.addOutput(photoOutput!)
+            captureSession.addOutput(stillImageOutput!)
             
             // set up the camera preview layer
             cameraPreviewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
             view.layer.addSublayer(cameraPreviewLayer!)
             cameraPreviewLayer?.videoGravity = AVLayerVideoGravity.resizeAspectFill
             cameraPreviewLayer?.frame = view.layer.frame
-            cameraPreviewLayer?.connection?.videoOrientation = AVCaptureVideoOrientation.portrait
             
             view.bringSubview(toFront: cameraButton)
             
-            
             captureSession.startRunning()
+            
+            // toggle the camera
+            toggleCameraGestureRecognizer.numberOfTapsRequired = 2
+            toggleCameraGestureRecognizer.addTarget(self, action: #selector(toggleCamera))
+            view.addGestureRecognizer(toggleCameraGestureRecognizer)
         } catch let error {
             print(error)
         }
-        
     }
     
-    @IBAction func shutterButtonDidTap(_ sender: Any) {
+    @objc private func toggleCamera() {
+        // start the configuration change
+        captureSession.beginConfiguration()
         
+        let newDevice = (currentDevice?.position == . back) ? frontFacingCamera : backFacingCamera
         
-    }
-    
+        for input in captureSession.inputs {
+            captureSession.removeInput(input as! AVCaptureDeviceInput)
+        }
+        
+        let cameraInput: AVCaptureDeviceInput
+        do {
+            cameraInput = try AVCaptureDeviceInput(device: newDevice!)
+        } catch let error {
+            print(error)
+            return
+        }
+        
+        if captureSession.canAddInput(cameraInput) {
+            captureSession.addInput(cameraInput)
+        }
+        
+        currentDevice = newDevice
+        captureSession.commitConfiguration()
+}
 }
 
 

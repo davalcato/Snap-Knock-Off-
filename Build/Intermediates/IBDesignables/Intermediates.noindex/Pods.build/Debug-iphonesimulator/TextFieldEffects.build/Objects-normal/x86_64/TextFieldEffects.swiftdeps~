@@ -22,8 +22,11 @@ depends-top-level:
 - !private "!="
 - "=="
 - "Bool"
+- !private "BooleanLiteralType"
 - "CGRect"
+- "FloatLiteralType"
 - "Int"
+- "IntegerLiteralType"
 - !private "NSNotification"
 - !private "NotificationCenter"
 - "String"
@@ -38,6 +41,7 @@ depends-member:
 - ["16TextFieldEffectsAAC13AnimationTypeO", "RawValue"]
 - ["16TextFieldEffectsAAC13AnimationTypeO", "_Default_RawValue"]
 - ["16TextFieldEffectsAAC13AnimationTypeO", "deinit"]
+- ["16TextFieldEffectsAAC13AnimationTypeO", "hash"]
 - ["16TextFieldEffectsAAC13AnimationTypeO", "hashValue"]
 - ["16TextFieldEffectsAAC13AnimationTypeO", "init"]
 - ["16TextFieldEffectsAAC13AnimationTypeO", "rawValue"]
@@ -57,6 +61,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "fatalError"]
 - !private ["So15CALayerDelegateP", "frame"]
 - ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "isFirstResponder"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "textFieldDidBeginEditing"]
 - !private ["So15CALayerDelegateP", "textFieldDidEndEditing"]
@@ -75,6 +80,7 @@ depends-member:
 - !private ["s7CVarArgP", "frame"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "isEmpty"]
+- !private ["s7CVarArgP", "isFirstResponder"]
 - !private ["s7CVarArgP", "isNotEmpty"]
 - !private ["s7CVarArgP", "removeObserver"]
 - !private ["s7CVarArgP", "text"]
@@ -100,6 +106,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "isEmpty"]
+- !private ["s28CustomDebugStringConvertibleP", "isFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "isNotEmpty"]
 - !private ["s28CustomDebugStringConvertibleP", "removeObserver"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
@@ -128,6 +135,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "frame"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "isEmpty"]
+- !private ["s23CustomStringConvertibleP", "isFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "isNotEmpty"]
 - !private ["s23CustomStringConvertibleP", "removeObserver"]
 - !private ["s23CustomStringConvertibleP", "text"]
@@ -158,9 +166,11 @@ depends-member:
 - !private ["s9EquatableP", "drawViewsForRect"]
 - !private ["s9EquatableP", "fatalError"]
 - !private ["s9EquatableP", "frame"]
+- ["s9EquatableP", "hash"]
 - ["s9EquatableP", "hashValue"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "isEmpty"]
+- !private ["s9EquatableP", "isFirstResponder"]
 - !private ["s9EquatableP", "isNotEmpty"]
 - ["s9EquatableP", "rawValue"]
 - !private ["s9EquatableP", "removeObserver"]
@@ -194,15 +204,18 @@ depends-member:
 - !private ["s8HashableP", "drawViewsForRect"]
 - !private ["s8HashableP", "fatalError"]
 - !private ["s8HashableP", "frame"]
+- ["s8HashableP", "hash"]
 - ["s8HashableP", "hashValue"]
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "isEmpty"]
+- !private ["s8HashableP", "isFirstResponder"]
 - !private ["s8HashableP", "isNotEmpty"]
 - ["s8HashableP", "rawValue"]
 - !private ["s8HashableP", "removeObserver"]
 - !private ["s8HashableP", "text"]
 - !private ["s8HashableP", "textFieldDidBeginEditing"]
 - !private ["s8HashableP", "textFieldDidEndEditing"]
+- !private ["s6HasherV", "combine"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "isEmpty"]
@@ -222,6 +235,7 @@ depends-member:
 - !private ["So8NSCodingP", "frame"]
 - ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isEmpty"]
+- !private ["So8NSCodingP", "isFirstResponder"]
 - !private ["So8NSCodingP", "isNotEmpty"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "textFieldDidBeginEditing"]
@@ -258,6 +272,7 @@ depends-member:
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "isEmpty"]
+- !private ["So8NSObjectC", "isFirstResponder"]
 - !private ["So8NSObjectC", "isNotEmpty"]
 - ["So8NSObjectC", "placeholderLabel"]
 - ["So8NSObjectC", "prepareForInterfaceBuilder"]
@@ -267,34 +282,35 @@ depends-member:
 - ["So8NSObjectC", "textFieldDidEndEditing"]
 - ["So8NSObjectC", "updateViewsForBoundsChange"]
 - ["So8NSObjectC", "willMove"]
-- !private ["So16NSObjectProtocolP", "NSNotification"]
-- !private ["So16NSObjectProtocolP", "Name"]
-- !private ["So16NSObjectProtocolP", "NotificationCenter"]
-- ["So16NSObjectProtocolP", "UILabel"]
-- ["So16NSObjectProtocolP", ""]
-- !private ["So16NSObjectProtocolP", "addObserver"]
-- !private ["So16NSObjectProtocolP", "animateViewsForTextDisplay"]
-- !private ["So16NSObjectProtocolP", "animateViewsForTextEntry"]
-- !private ["So16NSObjectProtocolP", "default"]
-- !private ["So16NSObjectProtocolP", "drawViewsForRect"]
-- !private ["So16NSObjectProtocolP", "fatalError"]
-- !private ["So16NSObjectProtocolP", "frame"]
-- ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "isEmpty"]
-- !private ["So16NSObjectProtocolP", "isNotEmpty"]
-- !private ["So16NSObjectProtocolP", "removeObserver"]
-- !private ["So16NSObjectProtocolP", "text"]
-- !private ["So16NSObjectProtocolP", "textFieldDidBeginEditing"]
-- !private ["So16NSObjectProtocolP", "textFieldDidEndEditing"]
+- !private ["So8NSObjectP", "NSNotification"]
+- !private ["So8NSObjectP", "Name"]
+- !private ["So8NSObjectP", "NotificationCenter"]
+- ["So8NSObjectP", "UILabel"]
+- ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addObserver"]
+- !private ["So8NSObjectP", "animateViewsForTextDisplay"]
+- !private ["So8NSObjectP", "animateViewsForTextEntry"]
+- !private ["So8NSObjectP", "default"]
+- !private ["So8NSObjectP", "drawViewsForRect"]
+- !private ["So8NSObjectP", "fatalError"]
+- !private ["So8NSObjectP", "frame"]
+- ["So8NSObjectP", "init"]
+- !private ["So8NSObjectP", "isEmpty"]
+- !private ["So8NSObjectP", "isFirstResponder"]
+- !private ["So8NSObjectP", "isNotEmpty"]
+- !private ["So8NSObjectP", "removeObserver"]
+- !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "textFieldDidBeginEditing"]
+- !private ["So8NSObjectP", "textFieldDidEndEditing"]
 - !private ["So14NSSecureCodingP", "isEmpty"]
 - !private ["So14NSSecureCodingP", "isNotEmpty"]
 - !private ["So8NSStringC", "isEmpty"]
 - !private ["So8NSStringC", "isNotEmpty"]
-- !private ["So14NSNotificationC4NameV", "UITextFieldTextDidBeginEditing"]
-- !private ["So14NSNotificationC4NameV", "UITextFieldTextDidEndEditing"]
-- !private ["So18NotificationCenterC", "addObserver"]
-- !private ["So18NotificationCenterC", "default"]
-- !private ["So18NotificationCenterC", "removeObserver"]
+- !private ["So18NSNotificationNamea", "UITextFieldTextDidBeginEditing"]
+- !private ["So18NSNotificationNamea", "UITextFieldTextDidEndEditing"]
+- !private ["So20NSNotificationCenterC", "addObserver"]
+- !private ["So20NSNotificationCenterC", "default"]
+- !private ["So20NSNotificationCenterC", "removeObserver"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "isEmpty"]
 - !private ["s26RangeReplaceableCollectionP", "isNotEmpty"]
@@ -303,6 +319,7 @@ depends-member:
 - !private ["s16RawRepresentableP", "UITextFieldTextDidEndEditing"]
 - ["s16RawRepresentableP", ""]
 - ["s16RawRepresentableP", "_Default_RawValue"]
+- ["s16RawRepresentableP", "hash"]
 - ["s16RawRepresentableP", "hashValue"]
 - ["s16RawRepresentableP", "init"]
 - ["s16RawRepresentableP", "rawValue"]
@@ -329,13 +346,14 @@ depends-member:
 - ["16TextFieldEffectsAAC", "animateViewsForTextDisplay"]
 - ["16TextFieldEffectsAAC", "animateViewsForTextEntry"]
 - ["16TextFieldEffectsAAC", "animationCompletionHandler"]
-- ["16TextFieldEffectsAAC", "deinit"]
+- !private ["16TextFieldEffectsAAC", "deinit"]
 - ["16TextFieldEffectsAAC", "draw"]
 - ["16TextFieldEffectsAAC", "drawPlaceholder"]
 - ["16TextFieldEffectsAAC", "drawViewsForRect"]
 - !private ["16TextFieldEffectsAAC", "fatalError"]
 - !private ["16TextFieldEffectsAAC", "frame"]
 - ["16TextFieldEffectsAAC", "init"]
+- !private ["16TextFieldEffectsAAC", "isFirstResponder"]
 - ["16TextFieldEffectsAAC", "placeholderLabel"]
 - ["16TextFieldEffectsAAC", "prepareForInterfaceBuilder"]
 - ["16TextFieldEffectsAAC", "text"]
@@ -359,6 +377,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "fatalError"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
 - ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "isFirstResponder"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "textFieldDidBeginEditing"]
 - !private ["So29UIAccessibilityIdentificationP", "textFieldDidEndEditing"]
@@ -372,6 +391,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "fatalError"]
 - !private ["So12UIAppearanceP", "frame"]
 - ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "isFirstResponder"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "textFieldDidBeginEditing"]
 - !private ["So12UIAppearanceP", "textFieldDidEndEditing"]
@@ -385,6 +405,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "fatalError"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "isFirstResponder"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "textFieldDidBeginEditing"]
 - !private ["So21UIAppearanceContainerP", "textFieldDidEndEditing"]
@@ -398,6 +419,7 @@ depends-member:
 - !private ["So30UIContentSizeCategoryAdjustingP", "fatalError"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "frame"]
 - ["So30UIContentSizeCategoryAdjustingP", "init"]
+- !private ["So30UIContentSizeCategoryAdjustingP", "isFirstResponder"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "textFieldDidBeginEditing"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "textFieldDidEndEditing"]
@@ -419,6 +441,7 @@ depends-member:
 - !private ["So9UIControlC", "fatalError"]
 - !private ["So9UIControlC", "frame"]
 - ["So9UIControlC", "init"]
+- !private ["So9UIControlC", "isFirstResponder"]
 - ["So9UIControlC", "placeholderLabel"]
 - ["So9UIControlC", "prepareForInterfaceBuilder"]
 - ["So9UIControlC", "text"]
@@ -436,6 +459,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "fatalError"]
 - !private ["So17UICoordinateSpaceP", "frame"]
 - ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "isFirstResponder"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "textFieldDidBeginEditing"]
 - !private ["So17UICoordinateSpaceP", "textFieldDidEndEditing"]
@@ -449,6 +473,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "fatalError"]
 - !private ["So13UIDynamicItemP", "frame"]
 - ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "isFirstResponder"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "textFieldDidBeginEditing"]
 - !private ["So13UIDynamicItemP", "textFieldDidEndEditing"]
@@ -462,6 +487,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "fatalError"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "isFirstResponder"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "textFieldDidBeginEditing"]
 - !private ["So18UIFocusEnvironmentP", "textFieldDidEndEditing"]
@@ -475,9 +501,24 @@ depends-member:
 - !private ["So11UIFocusItemP", "fatalError"]
 - !private ["So11UIFocusItemP", "frame"]
 - ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "isFirstResponder"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "textFieldDidBeginEditing"]
 - !private ["So11UIFocusItemP", "textFieldDidEndEditing"]
+- !private ["So20UIFocusItemContainerP", "NSNotification"]
+- !private ["So20UIFocusItemContainerP", "NotificationCenter"]
+- ["So20UIFocusItemContainerP", "UILabel"]
+- ["So20UIFocusItemContainerP", ""]
+- !private ["So20UIFocusItemContainerP", "animateViewsForTextDisplay"]
+- !private ["So20UIFocusItemContainerP", "animateViewsForTextEntry"]
+- !private ["So20UIFocusItemContainerP", "drawViewsForRect"]
+- !private ["So20UIFocusItemContainerP", "fatalError"]
+- !private ["So20UIFocusItemContainerP", "frame"]
+- ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "isFirstResponder"]
+- !private ["So20UIFocusItemContainerP", "text"]
+- !private ["So20UIFocusItemContainerP", "textFieldDidBeginEditing"]
+- !private ["So20UIFocusItemContainerP", "textFieldDidEndEditing"]
 - !private ["So10UIKeyInputP", "NSNotification"]
 - !private ["So10UIKeyInputP", "NotificationCenter"]
 - ["So10UIKeyInputP", "UILabel"]
@@ -488,6 +529,7 @@ depends-member:
 - !private ["So10UIKeyInputP", "fatalError"]
 - !private ["So10UIKeyInputP", "frame"]
 - !private ["So10UIKeyInputP", "init"]
+- !private ["So10UIKeyInputP", "isFirstResponder"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So10UIKeyInputP", "textFieldDidBeginEditing"]
 - !private ["So10UIKeyInputP", "textFieldDidEndEditing"]
@@ -502,6 +544,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "fatalError"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "isFirstResponder"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "textFieldDidBeginEditing"]
 - !private ["So30UIPasteConfigurationSupportingP", "textFieldDidEndEditing"]
@@ -523,6 +566,7 @@ depends-member:
 - !private ["So11UIResponderC", "fatalError"]
 - !private ["So11UIResponderC", "frame"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "isFirstResponder"]
 - ["So11UIResponderC", "placeholderLabel"]
 - ["So11UIResponderC", "prepareForInterfaceBuilder"]
 - ["So11UIResponderC", "text"]
@@ -540,6 +584,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "fatalError"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "isFirstResponder"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "textFieldDidBeginEditing"]
 - !private ["So30UIResponderStandardEditActionsP", "textFieldDidEndEditing"]
@@ -553,6 +598,7 @@ depends-member:
 - !private ["So15UITextDraggableP", "fatalError"]
 - !private ["So15UITextDraggableP", "frame"]
 - !private ["So15UITextDraggableP", "init"]
+- !private ["So15UITextDraggableP", "isFirstResponder"]
 - !private ["So15UITextDraggableP", "text"]
 - !private ["So15UITextDraggableP", "textFieldDidBeginEditing"]
 - !private ["So15UITextDraggableP", "textFieldDidEndEditing"]
@@ -566,6 +612,7 @@ depends-member:
 - !private ["So15UITextDroppableP", "fatalError"]
 - !private ["So15UITextDroppableP", "frame"]
 - !private ["So15UITextDroppableP", "init"]
+- !private ["So15UITextDroppableP", "isFirstResponder"]
 - !private ["So15UITextDroppableP", "text"]
 - !private ["So15UITextDroppableP", "textFieldDidBeginEditing"]
 - !private ["So15UITextDroppableP", "textFieldDidEndEditing"]
@@ -588,6 +635,7 @@ depends-member:
 - !private ["So11UITextFieldC", "fatalError"]
 - !private ["So11UITextFieldC", "frame"]
 - ["So11UITextFieldC", "init"]
+- !private ["So11UITextFieldC", "isFirstResponder"]
 - ["So11UITextFieldC", "placeholderLabel"]
 - ["So11UITextFieldC", "prepareForInterfaceBuilder"]
 - ["So11UITextFieldC", "text"]
@@ -605,6 +653,7 @@ depends-member:
 - !private ["So11UITextInputP", "fatalError"]
 - !private ["So11UITextInputP", "frame"]
 - !private ["So11UITextInputP", "init"]
+- !private ["So11UITextInputP", "isFirstResponder"]
 - !private ["So11UITextInputP", "text"]
 - !private ["So11UITextInputP", "textFieldDidBeginEditing"]
 - !private ["So11UITextInputP", "textFieldDidEndEditing"]
@@ -618,6 +667,7 @@ depends-member:
 - !private ["So17UITextInputTraitsP", "fatalError"]
 - !private ["So17UITextInputTraitsP", "frame"]
 - !private ["So17UITextInputTraitsP", "init"]
+- !private ["So17UITextInputTraitsP", "isFirstResponder"]
 - !private ["So17UITextInputTraitsP", "text"]
 - !private ["So17UITextInputTraitsP", "textFieldDidBeginEditing"]
 - !private ["So17UITextInputTraitsP", "textFieldDidEndEditing"]
@@ -631,6 +681,7 @@ depends-member:
 - !private ["So34UITextPasteConfigurationSupportingP", "fatalError"]
 - !private ["So34UITextPasteConfigurationSupportingP", "frame"]
 - !private ["So34UITextPasteConfigurationSupportingP", "init"]
+- !private ["So34UITextPasteConfigurationSupportingP", "isFirstResponder"]
 - !private ["So34UITextPasteConfigurationSupportingP", "text"]
 - !private ["So34UITextPasteConfigurationSupportingP", "textFieldDidBeginEditing"]
 - !private ["So34UITextPasteConfigurationSupportingP", "textFieldDidEndEditing"]
@@ -644,9 +695,24 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "fatalError"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "isFirstResponder"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "textFieldDidBeginEditing"]
 - !private ["So18UITraitEnvironmentP", "textFieldDidEndEditing"]
+- !private ["So23UIUserActivityRestoringP", "NSNotification"]
+- !private ["So23UIUserActivityRestoringP", "NotificationCenter"]
+- ["So23UIUserActivityRestoringP", "UILabel"]
+- ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "animateViewsForTextDisplay"]
+- !private ["So23UIUserActivityRestoringP", "animateViewsForTextEntry"]
+- !private ["So23UIUserActivityRestoringP", "drawViewsForRect"]
+- !private ["So23UIUserActivityRestoringP", "fatalError"]
+- !private ["So23UIUserActivityRestoringP", "frame"]
+- ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "isFirstResponder"]
+- !private ["So23UIUserActivityRestoringP", "text"]
+- !private ["So23UIUserActivityRestoringP", "textFieldDidBeginEditing"]
+- !private ["So23UIUserActivityRestoringP", "textFieldDidEndEditing"]
 - ["So6UIViewC", "AnimationCompletionHandler"]
 - ["So6UIViewC", "AnimationType"]
 - ["So6UIViewC", "CGRect"]
@@ -665,6 +731,7 @@ depends-member:
 - !private ["So6UIViewC", "fatalError"]
 - !private ["So6UIViewC", "frame"]
 - ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "isFirstResponder"]
 - ["So6UIViewC", "placeholderLabel"]
 - ["So6UIViewC", "prepareForInterfaceBuilder"]
 - ["So6UIViewC", "text"]
@@ -682,6 +749,7 @@ depends-member:
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "fatalError"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "frame"]
 - ["s37_DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "isFirstResponder"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textFieldDidBeginEditing"]
 - !private ["s37_DefaultCustomPlaygroundQuickLookableP", "textFieldDidEndEditing"]
@@ -718,6 +786,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "isFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isNotEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeObserver"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
@@ -754,6 +823,7 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
+- !private "s6HasherV"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "So8NSCodingP"
@@ -763,11 +833,11 @@ depends-nominal:
 - !private "So16NSMutableCopyingP"
 - !private "So14NSNotificationC"
 - "So8NSObjectC"
-- "So16NSObjectProtocolP"
+- "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- !private "So14NSNotificationC4NameV"
-- !private "So18NotificationCenterC"
+- !private "So18NSNotificationNamea"
+- !private "So20NSNotificationCenterC"
 - !private "s26RangeReplaceableCollectionP"
 - "s16RawRepresentableP"
 - !private "s8SequenceP"
@@ -786,6 +856,7 @@ depends-nominal:
 - "So13UIDynamicItemP"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
+- "So20UIFocusItemContainerP"
 - "So10UIKeyInputP"
 - "So7UILabelC"
 - "So30UIPasteConfigurationSupportingP"
@@ -798,6 +869,7 @@ depends-nominal:
 - "So17UITextInputTraitsP"
 - "So34UITextPasteConfigurationSupportingP"
 - "So18UITraitEnvironmentP"
+- "So23UIUserActivityRestoringP"
 - "So6UIViewC"
 - "s37_DefaultCustomPlaygroundQuickLookableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -828,14 +900,14 @@ depends-external:
 - "/Applications/Xcode-beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/Target Support Files/TextFieldEffects/TextFieldEffects-umbrella.h"
 - "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Build/Intermediates/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/TextFieldEffects.build/unextended-module.modulemap"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/objc/ObjectiveC.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/usr/include/Darwin.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
-- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator11.4.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "49ef1586e3ecde8a00426dee534e0abd"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/objc/ObjectiveC.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Metal.framework/Headers/Metal.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/usr/include/Darwin.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
+- "/Applications/Xcode-beta.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator12.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
+interface-hash: "3db543d64663bf13736fcd0c43431f94"

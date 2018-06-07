@@ -1,14 +1,14 @@
-version: "Apple Swift version 4.1.1 (swiftlang-902.0.53 clang-902.0.39.2)"
-options: "d0dd3e3d64757af518fd3fdd202d8d1f"
-build_time: [1527041935, 513280000]
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "64b785e5df82efc092e51b9a593ebc19"
+build_time: [1528335728, 655111000]
 inputs:
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1526958520, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1526958520, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [1526958520, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [1526958520, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": [1526958520, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": [1526958520, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": [1526958520, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldEffects.swift": [1527041806, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": [1526958520, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": [1526958520, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/AkiraTextField.swift": [1528167525, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/HoshiTextField.swift": [1528167525, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/IsaoTextField.swift": [1528167525, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/JiroTextField.swift": [1528167525, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/KaedeTextField.swift": [1528167525, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MadokaTextField.swift": [1528167525, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/MinoruTextField.swift": [1528167525, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/TextFieldEffects.swift": [1528326537, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YokoTextField.swift": [1528167525, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Pods/TextFieldEffects/TextFieldEffects/TextFieldEffects/YoshikoTextField.swift": [1528167525, 0]
