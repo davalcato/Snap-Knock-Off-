@@ -1,6 +1,9 @@
-version: "Apple Swift version 4.1.1 (swiftlang-902.0.53 clang-902.0.39.2)"
-options: "b22e9a5f334da6d20069fa36390982ba"
-build_time: [1526948837, 868116000]
+version: "Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)"
+options: "e37fe00ba44fb6a1f271d7ad7ba45683"
+build_time: [1528673325, 179242000]
 inputs:
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/ViewController.swift": [1526948827, 0]
-  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/AppDelegate.swift": [1526948827, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/ContainerView.swift": [1528673310, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/MiddleView.swift": [1528673024, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/RightView.swift": [1528673024, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Supporting Files/AppDelegate.swift": [1528673024, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/Controller/LeftView.swift": [1528673310, 0]

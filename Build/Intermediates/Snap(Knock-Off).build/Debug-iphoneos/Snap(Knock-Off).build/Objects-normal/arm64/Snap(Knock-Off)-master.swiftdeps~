@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.1.1 (swiftlang-902.0.53 clang-902.0.39.2)"
+options: "b22e9a5f334da6d20069fa36390982ba"
+build_time: [1526948837, 868116000]
+inputs:
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/ViewController.swift": [1526948827, 0]
+  "/Users/davalcato/Desktop/iOS/Snap(Knock-Off)/Snap(Knock-Off)/AppDelegate.swift": [1526948827, 0]
